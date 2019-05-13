@@ -3,7 +3,7 @@ from user import User
 
 
 class TestUser(unittest.TestCase):
-    """Define test case for user class behaviour"""
+    """Test case for user class behaviour"""
 
     def setUp(self):
         """Runs Set Up method before each test case to check if the correct instatiation of the class"""
@@ -16,7 +16,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.password, "12345")
 
     def test_save_user(self):
-        """Method that tests wether an user credentials have been successfully saved"""
+        """Method that tests wether a user credentials have been successfully saved"""
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
 
