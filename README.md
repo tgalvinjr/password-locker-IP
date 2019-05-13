@@ -26,12 +26,12 @@ An application that allows users to generate, store and manage their passwords o
     The UI templates can be tested on [github pages](https://tgalvinjr.github.io/password-locker-IP/)
     
 ## Setup instructions
-Open your terminal 
-From Github, clone/download this repository 
-Run the command $ git clone https://github.com/tgalvinjr/password-locker-IP.git
-Change directory by running $ cd password-locker-IP
-Run $ chmod +x run.py to make the program executable
-Run $ ./run.py
+1. Open your terminal 
+2. From Github, clone/download this repository 
+3. Run the command $ git clone https://github.com/tgalvinjr/password-locker-IP.git
+4. Change directory by running $ cd password-locker-IP
+5. Run $ chmod +x run.py to make the program executable
+6. Run $ ./run.py
 
 ## Prerequisties 
 Install required libraries by running $ pip install -r requirements.txt
