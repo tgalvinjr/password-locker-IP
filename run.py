@@ -64,7 +64,7 @@ def main():
                 created_user_password = input()
                 print("Confirm Your Password")
                 confirm_password = input()
-                else:
+            else:
                 print(
                     f"Congratulations {created_user_name}! You have created your new account.")
                 print('\n')
