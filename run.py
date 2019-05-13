@@ -44,11 +44,11 @@ def main():
     while True:
         print("Welcome to PassWord Locker.")
         print('\n')
-        print("Use these short codes to select an option: Create New User use 'cu': Login to your account use 'lg' or 'ex' to exit password locker")
+        print("Use these short codes to select an option: Create New User use 'cnu': Login to your account use 'lgn' or 'ex' to exit password locker")
         short_code = input().lower()
         print('\n')
 
-        if short_code == 'cu':
+        if short_code == 'cnu':
             print("Create a UserName")
             created_user_name = input()
 
@@ -142,7 +142,7 @@ def main():
 
                             else:
                                 print('\n')
-                                print("You don't seem to have any contacts yet")
+                                print("You don't seem to have any credentials yet")
                                 print('\n')
 
                             print("Back to Menu? y/n")
@@ -215,7 +215,7 @@ def main():
                         print("Please enter a valid code")
                         continue
 
-        elif short_code == 'lg':
+        elif short_code == 'lgn':
             print("WELCOME")
             print("Enter UserName")
             default_user_name = input()
