@@ -308,10 +308,7 @@ def main():
                             continue
                         else:
                             print("Please Enter a valid code")
-                        # elif choice1 == 'n':
-                        #     break
-                        # else:
-                        #     print("Please use y or n")
+                       
                 elif option == '5':
                     print(
                         "WARNING! You will loose all your credentials if you log out. Are you sure? y/n")
