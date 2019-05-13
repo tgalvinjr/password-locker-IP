@@ -16,7 +16,7 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credentials.account_password, "12345")
 
     def test_save_credentials(self):
-        """Method that tests whether the new credential created has been saved"""
+        """Method that tests whether the new credential created has been successfully saved"""
         self.new_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
 
