@@ -9,6 +9,10 @@ class TestCredentials(unittest.TestCase):
     def setUp(self):
         """Set up method to run befor before each test case"""
         self.new_credentials = Credentials("Facebook", "12345")
+    
+    def tearDown(self):
+        """Method that clears the credentials_list after every test to ensure that there is no error"""
+        Credentials.credentials_list = []
 
     def test_credentials_instance(self):
         """Method that tests whether the new_credentials have been instantiated correctly"""
@@ -19,7 +23,13 @@ class TestCredentials(unittest.TestCase):
         """Method that tests whether the new credential created has been successfully saved"""
         self.new_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
-
+    
+    def test_save_multiple_credentials(self):
+        """Method that saves multiple credentials to credentials_list"""
+        self.new_credentials.save_credentials()
+        new_test_credential = Credentials("Twitter", "56789")
+        new_test_credential.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 2)
 
 
         
